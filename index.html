@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link  href="style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <body  class="bg-light">
+        <div class="conatiner d-flex justify-content-center align-items-center ">
+        <div class="wrapper bg-white shadow p-3 mb-5 bg-white rounded m-4" id="maindiv">
+            <form class="p-5 d-flex flex-column" id="formLogin"  method="post">
+                <h2 class="p-4 text-center">Login Page</h2>
+                <label ><h5>User Name:</h5></label>
+                <input type="text" id="userName"  >
+                <p id="usernError"></p>
+                <label ><h5>Password:</h5></label>
+                <input type="password" id="password">
+                <p id="passError"></p>
+                <button type="button" class="btn bttn d-block text-center mt-5" id="next" onclick="authenticateUser()">Next</button>
+                </form>
+    </body>
+    <script src="jscript.js">
+    </script>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Update Trainee</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link  href="style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <body  class="bg-light">
+        <div class="conatiner d-flex justify-content-center align-items-center ">
+        <div class="wrapper bg-white shadow p-3 mb-5 bg-white rounded m-4" id="maindiv">
+            <form class="p-5 d-flex flex-column" id="traineeInfo"  method="post">
+                <h2 class="p-4 text-center">Update Trainee</h2>
+                <label>First Name:</label>
+                <input type="text" id="firstName">
+                <label  id="fnameError"></label>
+                <label>Last Name:</label>
+                <input type="text" id="lastName">
+                <label>User Name:</label>
+                <input type="text" id="uniqueUname">
+                <label  id="unameError"></label>
+                <label>Password:</label>
+                <input type="password" id="password">
+                <label  id="passError"></label>
+                <label>Email:</label>
+                <input type="email" id="email">
+                <label  id="emailError"></label>
+                <label>Phone Number:</label>
+                <input type="number" id="phNumber">
+                <label  id="phnumError"></label>
+                <label>Date Of Birth</label>
+                <input type="date" id="dob">
+                <label id="dobError"></label>
+                <!-- onclick="myFunction(this.value)
+                <div><label class="mr-3">Gender</label><input type="radio" value="Male" class="p-3 mr-2"><label>Male</label> 
+                <input type="radio" value="Female" class="p-3 mr-2 ml-3"><label>Female</label>
+                </div> -->
+
+                <label>Status</label>
+                <select id="mySelect">
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                  </select>
+
+                <p id="catch"></p>
+                <button type="button" class="btn bttn d-block text-center mt-5" id="next" onclick="update()">Update</button>
+                
+                </form>
+                </div>
+                </div>
+    </body>
+    <script src="update_trainee.js">
+    </script>
+</html>
